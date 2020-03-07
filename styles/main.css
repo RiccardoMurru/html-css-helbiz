@@ -97,6 +97,9 @@ body {
   border-right: 1px solid #000;
 }
 
+.hamburger {
+  display: none;
+}
 
 /* JUMBOTRON */
 #jumbotron {
@@ -202,4 +205,28 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
+}
+
+
+/* Responsive */
+/* Header */
+@media all and (max-width: 420px) {
+  .navbar-col-right {
+    float: right;
+    text-align: right;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  .hamburger a {
+    text-decoration: none;
+    color: #000;
+  }
 }
