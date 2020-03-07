@@ -209,8 +209,10 @@ body {
 
 
 /* Responsive */
-/* Header */
+
 @media all and (max-width: 420px) {
+
+  /* Header */
   .navbar-col-right {
     float: right;
     text-align: right;
@@ -228,5 +230,38 @@ body {
   .hamburger a {
     text-decoration: none;
     color: #000;
+  }
+
+  /* Jumbotron */
+  #jumbotron h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  #jumbotron h3 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  #jumbotron img {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  /* Products */
+  #products .float {
+    margin: 0 auto;
+    float: none;
+  }
+
+  #products .box {
+    width: 100%;
+    padding: 0;
+  }
+
+  #products .box {
+    border-bottom: 1px solid #000;
   }
 }
