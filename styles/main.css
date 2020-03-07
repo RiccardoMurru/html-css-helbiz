@@ -250,7 +250,7 @@ body {
     margin: 20px auto;
   }
 
-  /* Products */
+  /* Products section*/
   #products .float {
     margin: 0 auto;
     float: none;
@@ -264,4 +264,26 @@ body {
   #products .box {
     border-bottom: 1px solid #000;
   }
+
+  /* How works section */
+  .how-works-bg {
+    background-position: 5% 0%;
+  }
+
+  .img-phone {
+    display: none;
+  }
+
+  #how-works .col-sx,
+  #how-works .col-dx {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #how-works .col-sx h3 {
+    text-align: center;
+    width: 100%;
+  }
+
 }
