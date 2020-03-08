@@ -326,8 +326,41 @@ body {
   left: 50%;
   transform: translate(-50%);
   max-width: 100%;
-
 }
+
+/* Social Banner */
+#social-banner {
+  height: 500px;
+  width: 100%;
+  background-image: url('../img/social-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#social-banner .social {
+  height: 35%;
+  width: 30%;
+  background-color: #fff;
+}
+
+#social-banner .social h2 {
+  font-weight: 600;
+}
+
+#social-banner .social li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+#social-banner .social a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #000;
+  padding-right: 20px;
+}
+
 
 /* Responsive */
 
@@ -449,4 +482,15 @@ body {
     margin-left: 0;
     margin-bottom: 20px;
   }
+
+  /* Social banner */
+  #social-banner {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #social-banner .social {
+    width: 100%;
+  }
+
 }
