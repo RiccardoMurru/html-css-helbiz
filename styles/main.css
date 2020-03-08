@@ -25,8 +25,18 @@ body {
   clear: both;
 }
 
+.wrapper {
+  max-width: 100%;
+  margin: 20px;
+}
+
 .float {
   float: left;
+  padding: 0 16px;
+}
+
+.float-right {
+  float: right;
   padding: 0 16px;
 }
 
@@ -38,12 +48,20 @@ body {
   width: calc(100% / 3);
 }
 
+.w-45 {
+  width: 45%
+}
+
 .w-50 {
   width: 50%;
 }
 
 .w-70 {
   width: 70%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .relative {
@@ -207,6 +225,109 @@ body {
   width: 380px;
 }
 
+/* Smart mobility */
+#smart-mobility {
+  padding: 20px 50px;
+}
+
+#smart-mobility .col-1 {
+  height: 500px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-size: cover;
+  background-position: right;
+  text-align: center;
+  color: #fff;
+  /* margin: 20px 50px; */
+}
+
+#smart-mobility .col-1 h2,
+#smart-mobility .col-1 h3 {
+  width: 300px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10% auto;
+}
+
+#smart-mobility .col-1 h2 {
+  font-size: 40px;
+}
+
+#smart-mobility .col-1 h3 {
+  font-size: 20px;
+}
+
+#smart-mobility .col-1 a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+#smart-mobility .col-1 a::after {
+  content: '\003e';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#smart-mobility .col-2,
+#smart-mobility .col-3 {
+  height: 500px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+#smart-mobility .col-2 {
+  background: #3f5468;
+  overflow: hidden;
+}
+
+#smart-mobility .col-3 {
+  background-image: url('../img/cities.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#smart-mobility .col-3 {
+  margin-left: 10%;
+}
+
+#smart-mobility .col-2 h2,
+#smart-mobility .col-2 h3,
+#smart-mobility .col-3 h2,
+#smart-mobility .col-3 h3 {
+  font-weight: 600;
+  color: #fff;
+  margin: 20px;
+}
+
+#smart-mobility .col-2 h2,
+#smart-mobility .col-3 h2 {
+  font-size: 30px;
+}
+
+#smart-mobility .col-2 a,
+#smart-mobility .col-3 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+
+#smart-mobility .col-2 a::after,
+#smart-mobility .col-3 a::after {
+  content: '\003e';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#smart-mobility .col-2 img {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 100%;
+
+}
 
 /* Responsive */
 
@@ -286,4 +407,46 @@ body {
     width: 100%;
   }
 
+  /* Smart mobility */
+  #smart-mobility {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #smart-mobility .wrapper {
+    margin: 20px 0;
+  }
+
+  #smart-mobility .wrapper .col-1 {
+    width: 100%;
+    max-width: 100%;
+    background: #2a350d;
+    text-align: center;
+  }
+
+  #smart-mobility .wrapper .col-1 .float-right {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  #smart-mobility .wrapper .col-2 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  #smart-mobility .wrapper .col-2 img {
+    display: none;
+  }
+
+  #smart-mobility .wrapper .col-3 {
+    width: 100%;
+    height: auto;
+    background: #9c5657;
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
